@@ -1,0 +1,12 @@
+
+.popup .popup__content_img {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    position: relative;
+    text-align: center;
+    padding: 3px;
+}
