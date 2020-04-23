@@ -3,8 +3,11 @@
 
 ## Инструкция по развертыванию Mesto
 Для работы с проектом необходимо клонировать его в локальный репозиторий:  
-`$ git clone https://github.com/IlyaChernyaevDev/mesto.git
-`  
+`$ git clone https://github.com/IlyaChernyaevDev/mesto.git`  
+  
+После этого надо переустоновить webpack командой:  
+`$ npm i`  
+  
 В файле package.json находятся 3 скрипта:  
 1. Cкрипт **build** для сборки проекта:  
 `$ npm run build`  
@@ -14,7 +17,7 @@
 `$ npm run deploy`  
 
 ## Актуальная версия проекта
-v1.0.2
+v1.0.3
 
 ## Ссылка на актуальную версию проекта
 [Mesto](https://ilyachernyaevdev.github.io/mesto/)
