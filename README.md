@@ -17,7 +17,7 @@
 `$ npm run deploy`  
 
 ## Актуальная версия проекта
-v1.0.3
+v1.0.4
 
 ## Ссылка на актуальную версию проекта
 [Mesto](https://ilyachernyaevdev.github.io/mesto/)
