@@ -1,4 +1,4 @@
-class FormValidator {
+export class FormValidator {
 
     constructor(cardList, userInfo, textError) {
         this.cardList = cardList;

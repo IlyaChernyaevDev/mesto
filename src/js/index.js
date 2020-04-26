@@ -1,3 +1,13 @@
+import "../index.css";
+import {Api} from './Api.js';
+import {Card} from './Card';
+import {CardList} from './CardList';
+import {FormValidator} from './FormValidator';
+import {Popup} from './Popup';
+import {UserInfo} from './UserInfo';
+
+
+
 (function () {
 
   const mainPopup = document.querySelector('.popup');
@@ -13,7 +23,8 @@
     validationNecessarily: 'Это обязательное поле',
     validationLink: 'Здесь должна быть ссылка'
   };
-  const MAIN_URL = 'https://praktikum.tk/cohort8';
+  const serverUrl = NODE_ENV === 'development' ? 'http://praktikum.tk' : 'https://praktikum.tk';
+  const MAIN_URL = `${serverUrl}/cohort8`;
   const TOKEN = 'b1372024-e1ec-4a0b-b0a8-32d4b8e053a5';
   const api = new Api({
     baseUrl: MAIN_URL,

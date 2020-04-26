@@ -1,4 +1,4 @@
-class Popup {
+export class Popup {
     constructor(mainPopup, formValidator, userInfo) {
         this.mainPopup = mainPopup;
         this.formValidator = formValidator;
@@ -79,7 +79,7 @@ class Popup {
 
     imgPopupTemplate() {
         const tamplate =    `<div class="popup__content popup__content_img">
-                                <img src="./images/close.svg" alt="" class="popup__close popup__close_img-full-screen">
+                                <button class="popup__close popup__close_img-full-screen"></button>
                                 <img class="popup__img-full-screen" alt="">
                             </div>`;
         return tamplate;
@@ -87,7 +87,7 @@ class Popup {
 
     editPopupTemplate() {
         const tamplate =    `<div class="popup__content">
-                                <img src="./images/close.svg" alt="" class="popup__close popup__close_edit-profile">
+                                <button class="popup__close popup__close_edit-profile"></button>
                                 <h3 class="popup__title">Редактировать профиль</h3>
                                 <form class="popup__form" name="edit" novalidate id="editProfile">
                                     <input id="nameProfile" type="text" name="name" class="popup__input popup__input_type_name" placeholder="Имя" required minlength="2" maxlength="30">
@@ -102,7 +102,7 @@ class Popup {
 
     newCardPopupTemplate() {
         const tamplate =    `<div class="popup__content">
-                                <img src="./images/close.svg" alt="" class="popup__close popup__close_new-card">
+                                <button class="popup__close popup__close_new-card"></button>
                                 <h3 class="popup__title">Новое место</h3>
                                 <form class="popup__form" name="card" novalidate id="addNewPlace">
                                     <input id="namePlace" type="text" name="title" class="popup__input popup__input_type_name" placeholder="Название" required minlength="2" maxlength="30">
